@@ -2,6 +2,10 @@
 
 A stack is a linear data structure in which the insertion of a new element and removal of an existing element takes place at the same end represented as the top of the stack. Stacks follow the LIFO, or Last-In-First-Out, Principle. According to this approach, the last item to be inserted will be the first one to be removed. An example from real life is a stack of plates where the plate placed on top is the most recently added. Since we typically take the top plate off first, we can conclude that the last plate added will be the first one to be removed.
 
+A stack can be represented as follows:
+
+![Visual representation of a stack](https://www.softwaretestinghelp.com/wp-content/qa/uploads/2019/06/pictorial-representation-of-stack.png)
+
 ## Operations on Stacks:
 - push() to insert an element into the stack
 - pop() to remove an element from the stack
@@ -51,10 +55,6 @@ else
 end else
 end procedure
 ```
-
-A stack can be represented as follows:
-
-![Visual representation of a stack](https://www.softwaretestinghelp.com/wp-content/qa/uploads/2019/06/pictorial-representation-of-stack.png)
 
 The program in this repository shows the implementation of a stack using arrays in C.
 
