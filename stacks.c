@@ -1,4 +1,4 @@
-// program to implement s stack using an array
+// program to implement a stack using an array
 
 #include <stdio.h>
 
@@ -13,7 +13,7 @@ void display();
 
 int main()
 {
-	int choice;
+    int choice;
 	char c;
 	
 	printf("Stack Operations: \n");
@@ -59,67 +59,61 @@ int main()
 	}while(choice == 1 || choice == 2 || choice == 3);
 	
 	return 0;
+
+    return 0;
 }
 
 // push function
 void push()
 {
-	int n;
-	
-	if(top == (MAX - 1))
-	{
-		printf("stack overflow");
-	}
-	else
-	{
-		printf("Enter an integer: ");
-		scanf("%d", &n);
-		
-		top++;
-		stk[top] = n;
-		
-		printf("Value entered.\n\n\n");
-	}
-	
-	return;
+    int n;
+
+	printf("Enter an integer: ");
+	scanf("%d", &n);
+
+    if(top == (MAX - 1))
+    {
+        printf("stack overflow, cannot push element into the stack");
+    }
+    else
+    {
+        top++;
+        stk[top] = n;
+
+        printf("Element entered.\n\n\n");
+    }
+
 }
 
-// pop function
+//pop function
 void pop()
 {
-	int i;
-	
-	if(top == -1)
-	{
-		printf("stack underflow");
-	}
-	else
-	{
-		top--;
-		//for(i = top; i <= MAX - 1; i++)
-		//{
-		//	stk[i] = stk[i + 1];
-		//}
-		
-		printf("Value removed.\n\n\n");
-	}
-	
-	return;
+    if(top < 0)
+    {
+        printf("stack underflow, cannot pop element from the stack");
+    }
+    else
+    {
+        top--;
+        printf("Element removed.\n\n\n");
+    }
+
+    return;
 }
 
-// display function
+//display function
 void display()
 {
-	int i;
-	
-	printf("Available stack: \n");
-		
-	for(i = top; i >= 0; i--);
-	{
-		printf("%d\t", stk[i]);
-	}
-	
-	printf("\n\n\n");
-	
-	return;
+    int i;
+
+    printf("Available stack: ");
+
+    for(i = 0; i <= top; i++)
+    {
+        printf("%d\t", stk[i]);
+    }
+
+    printf("\n\n\n");
+    
+    return;
 }
