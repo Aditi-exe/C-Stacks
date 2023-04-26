@@ -182,7 +182,7 @@ void display()
 }
 ```
 
-### Outputs:
+### Output:
 
 ![stacks.c output 1](https://github.com/Aditi-exe/C-Stacks/blob/main/stacks1.PNG)
 
